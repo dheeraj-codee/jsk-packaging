@@ -7,6 +7,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,19 +63,22 @@ export default function Navbar() {
               About
             </Link>
 
-            {/* Products Dropdown */}
+            {/* Products Dropdown - hover to open, click text to go to page */}
 
-            <div className="group relative">
+            <div className="group relative flex items-center gap-1">
 
-              <button className="flex items-center gap-1 text-[#334155] font-medium hover:text-[#C9A227] transition">
+              <Link
+                href="/products"
+                className="flex items-center gap-1 text-[#334155] font-medium hover:text-[#C9A227] transition"
+              >
                 Products
                 <ChevronDown
                   size={16}
                   className="group-hover:rotate-180 transition"
                 />
-              </button>
+              </Link>
 
-              <div className="absolute top-12 left-0 bg-white rounded-2xl shadow-2xl border border-[#E5E7EB] p-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <div className="absolute top-10 left-0 bg-white rounded-2xl shadow-2xl border border-[#E5E7EB] p-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
 
                 {products.map((item) => (
                   <Link
@@ -142,13 +146,52 @@ export default function Navbar() {
                 About
               </Link>
 
-              <Link
-                href="/products"
-                className="px-4 py-3 text-[#334155]"
-                onClick={() => setIsOpen(false)}
-              >
-                Products
-              </Link>
+              {/* Mobile Products - text goes to page, arrow toggles dropdown */}
+
+              <div className="flex flex-col">
+
+                <div className="flex items-center justify-between px-4 py-3">
+                  <Link
+                    href="/products"
+                    className="text-[#334155] flex-1"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Products
+                  </Link>
+
+                  <button
+                    onClick={() => setMobileProductsOpen((prev) => !prev)}
+                    className="p-1"
+                    aria-label="Toggle products dropdown"
+                  >
+                    <ChevronDown
+  size={18}
+  className={`text-[#1E293B] transition-transform duration-300 ${
+    mobileProductsOpen ? "rotate-180" : ""
+  }`}
+/>
+                  </button>
+                </div>
+
+                {mobileProductsOpen && (
+                  <div className="flex flex-col bg-[#F8F7F3] mx-4 rounded-xl mb-2">
+                    {products.map((item) => (
+                      <Link
+                        key={item}
+                        href="/products"
+                        className="px-4 py-3 text-[#334155] hover:text-[#C9A227]"
+                        onClick={() => {
+                          setIsOpen(false);
+                          setMobileProductsOpen(false);
+                        }}
+                      >
+                        {item}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+              </div>
 
               <Link
                 href="/contact"

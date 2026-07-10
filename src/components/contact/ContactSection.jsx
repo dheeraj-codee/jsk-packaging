@@ -9,7 +9,7 @@ import {
 
 export default function ContactSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="grid lg:grid-cols-2 gap-10">
@@ -24,7 +24,7 @@ export default function ContactSection() {
     Contact Information
   </span>
 
-  <h2 className="text-4xl font-bold mt-4">
+  <h2 className="text-3xl md:text-4xl font-bold mt-4">
     Let's Discuss Your Packaging Project
   </h2>
 
@@ -141,7 +141,7 @@ export default function ContactSection() {
     Request A Quote
   </span>
 
-  <h3 className="text-3xl font-bold text-[#1E293B] mt-2">
+  <h3 className="text-3xl md:text-4xl font-bold text-[#1E293B] mt-2">
     Let's Discuss Your Project
   </h3>
 

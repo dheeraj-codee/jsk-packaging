@@ -1,6 +1,7 @@
 "use client";
 
-import { ArrowRight, Phone, Package, Award, Truck } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Package, Award, Truck } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -9,42 +10,49 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#C9A227]/10 blur-3xl rounded-full" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#1E293B]/10 blur-3xl rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-16">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           
           {/* LEFT CONTENT */}
-          <div>
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-[#E5E7EB] text-[#1E293B] text-sm font-medium">
+          <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+            <span className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white border border-[#E5E7EB] text-[#1E293B] text-sm font-medium">
               Premium Packaging Manufacturer in Jaipur
             </span>
 
-            <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#1E293B]">
+            <h1 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B] text-center lg:text-left">
               Premium
               <span className="text-[#C9A227]"> Packaging </span>
               Solutions For Modern Brands
             </h1>
 
-            <p className="mt-6 text-lg text-[#334155] leading-relaxed max-w-xl">
+            <p className="mt-6 text-lg text-[#334155] leading-relaxed max-w-xl text-center lg:text-left">
               JSK Packaging specializes in premium rigid boxes,
               mono cartons, product labels, jewellery boxes,
               gift boxes and custom packaging solutions that
               elevate your brand presence.
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-8">
-              <button className="px-7 py-4 rounded-xl bg-[#C9A227] text-white font-semibold hover:scale-105 transition">
+            {/* Buttons */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+              <Link
+                href="/contact"
+                className="px-7 py-4 rounded-xl bg-[#C9A227] text-white font-semibold hover:scale-105 transition"
+              >
                 Get Free Quote
-              </button>
+              </Link>
 
-              <button className="px-7 py-4 rounded-xl border border-[#1E293B] text-[#1E293B] font-semibold hover:bg-[#1E293B] hover:text-white transition flex items-center gap-2">
+              <Link
+                href="/products"
+                className="px-7 py-4 rounded-xl border border-[#1E293B] text-[#1E293B] font-semibold hover:bg-[#1E293B] hover:text-white transition flex items-center gap-2"
+              >
                 View Products
                 <ArrowRight size={18} />
-              </button>
+              </Link>
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12">
-              <div>
+            <div className="grid grid-cols-3 gap-6 mt-12 w-full text-center lg:text-left">
+              <div className="flex flex-col items-center lg:items-start">
                 <h3 className="text-3xl font-bold text-[#1E293B]">
                   150+
                 </h3>
@@ -53,7 +61,7 @@ export default function Hero() {
                 </p>
               </div>
 
-              <div>
+              <div className="flex flex-col items-center lg:items-start">
                 <h3 className="text-3xl font-bold text-[#1E293B]">
                   50+
                 </h3>
@@ -62,7 +70,7 @@ export default function Hero() {
                 </p>
               </div>
 
-              <div>
+              <div className="flex flex-col items-center lg:items-start">
                 <h3 className="text-3xl font-bold text-[#1E293B]">
                   5+
                 </h3>
@@ -76,7 +84,6 @@ export default function Hero() {
           {/* RIGHT SIDE */}
           <div className="relative">
             <div className="bg-white rounded-3xl p-6 shadow-xl border border-[#E5E7EB]">
-              
               <img
                 src="/hero-packaging.jpg"
                 alt="Premium Packaging Boxes"
@@ -106,10 +113,8 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-
-           
-
           </div>
+
         </div>
       </div>
     </section>

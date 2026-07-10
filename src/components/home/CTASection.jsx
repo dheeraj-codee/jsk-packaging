@@ -1,8 +1,8 @@
+import Link from "next/link";
 import { ArrowRight, PhoneCall } from "lucide-react";
-
 export default function CTASection() {
   return (
-    <section className="py-24 bg-[#1E293B] relative overflow-hidden">
+    <section className="py-16 bg-[#1E293B] relative overflow-hidden">
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#C9A227]/10 blur-3xl rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#C9A227]/10 blur-3xl rounded-full"></div>
 
@@ -13,7 +13,7 @@ export default function CTASection() {
             Let's Build Something Great
           </span>
 
-          <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Ready To Elevate Your
             <span className="text-[#C9A227]"> Packaging?</span>
           </h2>
@@ -26,15 +26,23 @@ export default function CTASection() {
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
 
-            <button className="px-8 py-4 bg-[#C9A227] text-white rounded-xl font-semibold flex items-center gap-2 hover:scale-105 transition">
-              Get Free Quote
-              <ArrowRight size={18} />
-            </button>
+            <div className="flex flex-wrap justify-center gap-4 mt-10">
+  <Link
+    href="/products"
+    className="px-8 py-4 bg-[#C9A227] text-white rounded-xl font-semibold flex items-center gap-2 hover:scale-105 transition"
+  >
+    View Products
+    <ArrowRight size={18} />
+  </Link>
 
-            <button className="px-8 py-4 border border-white/20 text-white rounded-xl font-semibold flex items-center gap-2 hover:bg-white hover:text-[#1E293B] transition">
-              <PhoneCall size={18} />
-              Call Now
-            </button>
+  <Link
+    href="/contact"
+    className="px-8 py-4 border border-white/20 text-white rounded-xl font-semibold flex items-center gap-2 hover:bg-white hover:text-[#1E293B] transition"
+  >
+    <PhoneCall size={18} />
+    Call Now
+  </Link>
+</div>
 
           </div>
 

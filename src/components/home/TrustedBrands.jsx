@@ -52,7 +52,7 @@ export default function TrustedBrands() {
             Why Leading Brands Choose Us
           </span>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
             Trusted Packaging Partner For
             <span className="text-[#C9A227]"> Growing Brands</span>
           </h2>

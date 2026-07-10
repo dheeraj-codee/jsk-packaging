@@ -35,7 +35,7 @@ export default function CompanyStory() {
   ];
 
   return (
-    <section className="py-28 bg-white overflow-hidden">
+    <section className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* Heading */}
@@ -44,12 +44,12 @@ export default function CompanyStory() {
             Our Story
           </span>
 
-          <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-[#1E293B]">
+          <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
             Building Packaging That
             <span className="text-[#C9A227]"> Builds Brands</span>
           </h2>
 
-          <p className="mt-6 text-lg text-[#64748B] leading-relaxed">
+          <p className="mt-6 text-md text-[#64748B] leading-relaxed">
             At JSK Packaging, we believe packaging is more than protection.
             It is the first impression of a brand and a key part of the customer experience.
           </p>

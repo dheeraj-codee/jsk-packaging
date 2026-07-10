@@ -23,15 +23,15 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        
+
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-flex px-4 py-2 rounded-full bg-[#F8F7F3] text-[#C9A227] font-medium">
             Client Testimonials
           </span>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
             What Our
             <span className="text-[#C9A227]"> Clients Say</span>
           </h2>
@@ -45,9 +45,10 @@ export default function Testimonials() {
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="bg-[#F8F7F3] rounded-3xl p-8 border border-[#E5E7EB]"
+              className="bg-[#F8F7F3] rounded-3xl p-8 border border-[#E5E7EB] text-center flex flex-col items-center"
             >
-              <div className="flex gap-1 mb-6">
+              {/* Stars */}
+              <div className="flex justify-center gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
@@ -57,16 +58,18 @@ export default function Testimonials() {
                 ))}
               </div>
 
+              {/* Review */}
               <p className="text-[#64748B] leading-relaxed">
                 "{item.review}"
               </p>
 
-              <div className="mt-6">
-                <h4 className="font-semibold text-[#1E293B]">
+              {/* Client Info */}
+              <div className="mt-6 text-center">
+                <h4 className="font-semibold text-[#1E293B] text-xl">
                   {item.name}
                 </h4>
 
-                <p className="text-sm text-[#64748B]">
+                <p className="text-sm text-[#64748B] mt-1">
                   {item.company}
                 </p>
               </div>

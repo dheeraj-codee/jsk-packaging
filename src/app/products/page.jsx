@@ -1,7 +1,5 @@
 import ProductsHero from "@/components/products/ProductsHero";
 import ProductsGrid from "@/components/products/ProductsGrid";
-import ProductsCTA from "@/components/products/ProductsCTA";
-
 export const metadata = {
   title:
     "Premium Packaging Products | Rigid Boxes, Mono Cartons & Labels | JSK Packaging",
@@ -73,7 +71,6 @@ export default function ProductsPage() {
     <>
       <ProductsHero />
       <ProductsGrid />
-      <ProductsCTA />
     </>
   );
 }

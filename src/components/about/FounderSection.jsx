@@ -1,6 +1,6 @@
 export default function FounderSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -16,7 +16,7 @@ export default function FounderSection() {
               Founder Message
             </span>
 
-            <h2 className="mt-4 text-5xl font-bold text-[#1E293B]">
+            <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
               Building Trust Through Quality Packaging
             </h2>
 

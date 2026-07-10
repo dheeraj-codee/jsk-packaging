@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -25,7 +25,7 @@ export default function AboutSection() {
               About JSK Packaging
             </span>
 
-            <h2 className="mt-6 text-4xl md:text-5xl font-bold text-[#1E293B] leading-tight">
+            <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B] leading-tight">
               Crafting Premium Packaging
               Solutions For Modern Brands
             </h2>

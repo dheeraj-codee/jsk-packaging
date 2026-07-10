@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 bg-[#F8F7F3]">
+    <section className="py-16 bg-[#F8F7F3]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="text-center max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
             Why Choose JSK Packaging
           </span>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
             Packaging Excellence That
             <span className="text-[#C9A227]"> Builds Brands</span>
           </h2>

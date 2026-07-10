@@ -37,7 +37,7 @@ export default function FeaturedProducts() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="text-center max-w-3xl mx-auto">
@@ -45,7 +45,7 @@ export default function FeaturedProducts() {
             Our Products
           </span>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
             Explore Our Premium
             <span className="text-[#C9A227]"> Packaging Range</span>
           </h2>

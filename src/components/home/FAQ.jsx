@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -40,15 +41,14 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-24 bg-[#F8F7F3]">
+    <section className="py-16 bg-[#F8F7F3]">
       <div className="max-w-5xl mx-auto px-6 lg:px-10">
-
         <div className="text-center">
           <span className="inline-flex px-4 py-2 rounded-full bg-white text-[#C9A227] font-medium">
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
             Got Questions?
             <span className="text-[#C9A227]"> We've Got Answers</span>
           </h2>
@@ -75,24 +75,41 @@ export default function FAQ() {
                   {faq.question}
                 </span>
 
-                {openIndex === index ? (
-                  <Minus className="text-[#C9A227]" />
-                ) : (
-                  <Plus className="text-[#C9A227]" />
-                )}
+                <motion.div
+                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {openIndex === index ? (
+                    <Minus className="text-[#C9A227]" />
+                  ) : (
+                    <Plus className="text-[#C9A227]" />
+                  )}
+                </motion.div>
               </button>
 
-              {openIndex === index && (
-                <div className="px-6 pb-6">
-                  <p className="text-[#64748B] leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
+              <AnimatePresence initial={false}>
+                {openIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{
+                      duration: 0.35,
+                      ease: "easeInOut",
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <div className="px-6 pb-6">
+                      <p className="text-[#64748B] leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
