@@ -1,6 +1,6 @@
 export default function GoogleMap() {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#F8F7F3] to-white">
+    <section className="py-12 bg-gradient-to-b from-[#F8F7F3] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* Heading */}
@@ -8,15 +8,6 @@ export default function GoogleMap() {
           <span className="inline-flex items-center rounded-full border border-[#C9A227]/30 bg-[#C9A227]/10 px-5 py-2 text-sm font-semibold tracking-wide text-[#C9A227]">
             📍 Our Location
           </span>
-
-          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
-            Find Us In Jaipur
-          </h2>
-
-          <p className="mt-4 max-w-2xl mx-auto text-slate-600 leading-8">
-            Visit our manufacturing unit and discover premium packaging
-            solutions designed for your brand.
-          </p>
         </div>
 
         {/* Map */}

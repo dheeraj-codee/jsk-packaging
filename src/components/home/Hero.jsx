@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Package, Award, Truck } from "lucide-react";
 
 export default function Hero() {
@@ -84,11 +85,17 @@ export default function Hero() {
           {/* RIGHT SIDE */}
           <div className="relative">
             <div className="bg-white rounded-3xl p-6 shadow-xl border border-[#E5E7EB]">
-              <img
-                src="/hero-packaging.jpg"
-                alt="Premium Packaging Boxes"
-                className="rounded-2xl w-full h-[500px] object-cover"
-              />
+              <div className="relative w-full h-[500px] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/ppk.jpg"
+                  alt="Premium Packaging Boxes"
+                  fill
+                  priority
+                  quality={90}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
 
               <div className="grid grid-cols-3 gap-4 mt-5">
                 <div className="bg-[#F8F7F3] rounded-xl p-4 text-center">

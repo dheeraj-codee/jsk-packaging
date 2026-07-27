@@ -8,8 +8,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-[#1E293B] text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
-
+<div className="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-8">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
 
           {/* Company Info */}
@@ -194,6 +193,13 @@ export default function Footer() {
 
                 <div>
 
+                   <a
+                    href="tel:+919314235578"
+                    className="block text-gray-300 hover:text-[#C9A227] transition"
+                  >
+                    +91 93142 35578
+                  </a>
+
                   <a
                     href="tel:+919828411787"
                     className="block text-gray-300 hover:text-[#C9A227] transition"
@@ -201,12 +207,7 @@ export default function Footer() {
                     +91 98284 11787
                   </a>
 
-                  <a
-                    href="tel:+919314235578"
-                    className="block text-gray-300 hover:text-[#C9A227] transition"
-                  >
-                    +91 93142 35578
-                  </a>
+                 
 
                 </div>
 
@@ -254,21 +255,23 @@ export default function Footer() {
 
         {/* Bottom Bar */}
 
-        <div className="border-t border-white/10 mt-14 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4">
+<div className="border-t border-white/10 mt-10 pt-6 flex flex-col lg:flex-row items-center justify-between gap-3">
+  <p className="text-gray-400 text-center lg:text-left">
+    © {new Date().getFullYear()} JSK Packaging. All Rights Reserved.
+  </p>
 
-          <p className="text-gray-400 text-center lg:text-left">
-            © {new Date().getFullYear()} JSK Packaging.
-            All Rights Reserved.
-          </p>
-
-          <p className="text-gray-400 text-center lg:text-right">
-            Designed & Developed by{" "}
-            <span className="text-[#C9A227] font-medium">
-              Branding Guide
-            </span>
-          </p>
-
-        </div>
+  <p className="text-gray-400 text-center lg:text-right">
+    Designed & Developed by{" "}
+    <a
+      href="https://www.brandingguide.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#C9A227] font-medium hover:text-[#E5C158] transition-colors duration-300"
+    >
+      Branding Guide
+    </a>
+  </p>
+</div>
 
       </div>
     </footer>

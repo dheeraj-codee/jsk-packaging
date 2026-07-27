@@ -64,21 +64,21 @@ export default function TrustedBrands() {
           </p>
         </div>
 
-        {/* Stats */}
+        {/* Stats — untouched, CountUp animation as-is */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
             <h3 className="text-4xl font-bold text-[#1E293B]">
-  <CountUp end={150} suffix="+" />
-</h3>
+              <CountUp end={150} suffix="+" />
+            </h3>
             <p className="mt-2 text-[#64748B]">
               Packaging Projects
             </p>
           </div>
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
-              <h3 className="text-4xl font-bold text-[#1E293B]">
-  <CountUp end={50} suffix="+" />
-</h3>
+            <h3 className="text-4xl font-bold text-[#1E293B]">
+              <CountUp end={50} suffix="+" />
+            </h3>
             <p className="mt-2 text-[#64748B]">
               Happy Clients
             </p>
@@ -86,7 +86,7 @@ export default function TrustedBrands() {
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
             <h3 className="text-4xl font-bold text-[#1E293B]">
-  <CountUp end={5} suffix="+" />
+              <CountUp end={5} suffix="+" />
             </h3>
             <p className="mt-2 text-[#64748B]">
               Years Experience
@@ -95,25 +95,25 @@ export default function TrustedBrands() {
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
             <h3 className="text-4xl font-bold text-[#1E293B]">
-  <CountUp end={100} suffix="%" />
-</h3>
+              <CountUp end={100} suffix="%" />
+            </h3>
             <p className="mt-2 text-[#64748B]">
               Quality Focused
             </p>
           </div>
         </div>
 
-        {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+        {/* Feature Cards — mobile horizontal scroll, md+ grid same as before */}
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 md:grid md:grid-cols-2 md:gap-8 md:overflow-visible md:mx-0 md:px-0 md:pb-0 lg:grid-cols-3 mt-20">
           {features.map((item, index) => (
             <div
               key={index}
-              className="group bg-white border border-[#E5E7EB] rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl"
+              className="group min-w-[80%] snap-center md:min-w-0 bg-white rounded-3xl p-8 border border-[#E5E7EB] shadow-md shadow-black/5 text-center flex flex-col items-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:border-[#C9A227]/40"
             >
-              <div className="w-16 h-16 rounded-2xl bg-[#F8F7F3] flex items-center justify-center">
+              <div className="w-16 h-16 rounded-2xl bg-[#F8F7F3] flex items-center justify-center transition-all duration-500 group-hover:bg-[#C9A227] group-hover:scale-110">
                 <item.icon
                   size={30}
-                  className="text-[#C9A227]"
+                  className="text-[#C9A227] transition-colors duration-500 group-hover:text-white"
                 />
               </div>
 

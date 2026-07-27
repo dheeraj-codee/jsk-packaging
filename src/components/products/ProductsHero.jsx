@@ -69,7 +69,7 @@ export default function ProductsHero() {
           >
             <Link
               href="/contact"
-              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-[#C9A227] px-7 py-3.5 md:px-8 md:py-4 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#B8921F]"
+              className="inline-flex w-auto justify-center items-center gap-2 rounded-full bg-[#C9A227] px-7 py-3.5 md:px-8 md:py-4 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#B8921F]"
             >
               Get Custom Quote
               <ArrowRight size={18} />
@@ -77,7 +77,7 @@ export default function ProductsHero() {
 
             <Link
               href="/portfolio"
-              className="inline-flex w-full sm:w-auto justify-center items-center rounded-full border-2 border-[#1E293B] px-7 py-3.5 md:px-8 md:py-4 font-semibold text-[#1E293B] transition-all duration-300 hover:bg-[#1E293B] hover:text-white"
+              className="inline-flex w-auto justify-center items-center rounded-full border-2 border-[#1E293B] px-7 py-3.5 md:px-8 md:py-4 font-semibold text-[#1E293B] transition-all duration-300 hover:bg-[#1E293B] hover:text-white"
             >
               View Portfolio
             </Link>

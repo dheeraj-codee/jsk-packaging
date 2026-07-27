@@ -1,29 +1,67 @@
+import { Phone, ArrowRight } from "lucide-react";
+
 export default function ContactHero() {
   return (
-    <section className="relative overflow-hidden bg-[#F8F7F3] py-30">
-      
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#C9A227]/10 blur-[120px] rounded-full" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#C9A227]/10 blur-[120px] rounded-full" />
+    <section className="relative overflow-hidden bg-[#F8F7F3]">
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
+      {/* Background Glow */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#C9A227]/10 blur-3xl rounded-full" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#1E293B]/10 blur-3xl rounded-full" />
 
-        <span className="inline-flex items-center px-5 py-2 rounded-full bg-[#C9A227]/10 text-[#C9A227] font-semibold">
-          Premium Packaging Solutions
-        </span>
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-16">
 
-        <h1 className="mt-8 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B] leading-tight">
-          Let's Create Packaging
-          <br />
-          That Sells Your Brand
-        </h1>
+        <div className="flex flex-col items-center text-center">
 
-        <p className="max-w-3xl mx-auto mt-8 text-xl text-[#64748B] leading-relaxed">
-          From luxury rigid boxes and mono cartons to labels and
-          fully customized packaging, our experts are ready to help
-          bring your vision to life.
-        </p>
+          {/* Badge */}
+
+          <span className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white border border-[#E5E7EB] text-[#1E293B] text-sm font-medium">
+            Premium Packaging Manufacturer in Jaipur
+          </span>
+
+          {/* Heading */}
+
+          <h1 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
+            Let's Create
+            <span className="text-[#C9A227]"> Packaging </span>
+            That Elevates Your Brand
+          </h1>
+
+          {/* Description */}
+
+          <p className="mt-6 text-lg text-[#334155] leading-relaxed max-w-3xl">
+            Whether you need premium rigid boxes, mono cartons,
+            product labels, jewellery boxes, gift boxes or fully
+            customized packaging, our experts are ready to help
+            bring your vision to life with high-quality packaging
+            solutions.
+          </p>
+
+          {/* Buttons */}
+
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+
+            <a
+              href="#contact-form"
+              className="px-7 py-4 rounded-xl bg-[#C9A227] text-white font-semibold hover:scale-105 transition flex items-center gap-2"
+            >
+              Get Free Quote
+              <ArrowRight size={18} />
+            </a>
+
+            <a
+              href="tel:+919314235578"
+              className="px-7 py-4 rounded-xl border border-[#1E293B] text-[#1E293B] font-semibold hover:bg-[#1E293B] hover:text-white transition flex items-center gap-2"
+            >
+              <Phone size={18} />
+              Call Our Expert
+            </a>
+
+          </div>
+
+        </div>
 
       </div>
+
     </section>
   );
 }

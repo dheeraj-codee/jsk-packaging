@@ -55,19 +55,18 @@ export default function ManufacturingProcess() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mt-16">
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 md:grid md:grid-cols-2 md:gap-8 md:overflow-visible md:mx-0 md:px-0 md:pb-0 lg:grid-cols-5 mt-16">
           {steps.map((step, index) => (
             <div
               key={index}
-className="group bg-white rounded-3xl p-8 border border-[#E5E7EB] text-center flex flex-col items-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:border-[#C9A227]/40"            >
-              
-
+              className="group min-w-[80%] snap-center md:min-w-0 bg-white rounded-3xl p-8 border border-[#E5E7EB] shadow-md shadow-black/5 text-center flex flex-col items-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:border-[#C9A227]/40"
+            >
               <div className="w-16 h-16 rounded-2xl bg-[#F8F7F3] flex items-center justify-center transition-all duration-500 group-hover:bg-[#C9A227] group-hover:scale-110">
-  <step.icon
-    size={30}
-    className="text-[#C9A227] transition-colors duration-500 group-hover:text-white"
-  />
-</div>
+                <step.icon
+                  size={30}
+                  className="text-[#C9A227] transition-colors duration-500 group-hover:text-white"
+                />
+              </div>
 
               <h3 className="mt-6 text-xl font-semibold text-[#1E293B]">
                 {step.title}

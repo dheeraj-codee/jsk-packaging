@@ -45,6 +45,13 @@ export default function ContactSection() {
       </div>
 
       <div>
+
+         <a
+          href="tel:+919314235578"
+          className="block text-lg text-slate-300 hover:text-[#C9A227] transition"
+        >
+          +91 93142 35578
+        </a>
         <a
           href="tel:+919828411787"
           className="block text-lg text-slate-300 hover:text-[#C9A227] transition"
@@ -52,12 +59,7 @@ export default function ContactSection() {
           +91 98284 11787
         </a>
 
-        <a
-          href="tel:+919314235578"
-          className="block text-lg text-slate-300 hover:text-[#C9A227] transition"
-        >
-          +91 93142 35578
-        </a>
+       
       </div>
 
     </div>

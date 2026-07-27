@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { X, ChevronDown, Download, Plus, Minus } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +19,30 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock background scroll while the mobile sidebar is open
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   const products = [
-    "Rigid Boxes",
-    "Mono Cartons",
-    "Labels",
-    "Jewellery Boxes",
-    "Gift Boxes",
-    "Sweet Boxes",
+    { name: "Rigid Boxes", slug: "rigid-boxes" },
+    { name: "Mono Cartons", slug: "mono-cartons" },
+    { name: "Labels", slug: "labels" },
+    { name: "Jewellery Boxes", slug: "jewellery-boxes" },
+    { name: "Gift Boxes", slug: "gift-boxes" },
+    { name: "Sweet Boxes", slug: "sweet-boxes" },
+    { name: "Window Boxes", slug: "window-boxes" },
+    { name: "Luxury Packaging", slug: "luxury-packaging" },
+  ];
+
+  // 3x3 dotted menu icon — mix of brand gold + navy dots
+  const menuDots = [
+    "bg-[#1E293B]", "bg-[#C9A227]", "bg-[#C9A227]",
+    "bg-[#C9A227]", "bg-[#C9A227]", "bg-[#1E293B]",
+    "bg-[#1E293B]", "bg-[#C9A227]", "bg-[#1E293B]",
   ];
 
   const navClass =
@@ -33,10 +50,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-xl shadow-md"
-          : "bg-white/80 backdrop-blur-md"
+      className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300 ${
+        scrolled ? "shadow-md" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -82,11 +97,11 @@ export default function Navbar() {
 
                 {products.map((item) => (
                   <Link
-                    key={item}
-                    href="/products"
+                    key={item.slug}
+                    href={`/products/${item.slug}`}
                     className="block px-4 py-3 text-[#334155] rounded-xl hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 ))}
 
@@ -117,104 +132,136 @@ export default function Navbar() {
           <button
             className="lg:hidden text-[#1E293B]"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? (
+              <X size={28} />
+            ) : (
+              <span className="grid grid-cols-3 gap-1">
+                {menuDots.map((c, i) => (
+                  <span key={i} className={`h-1.5 w-1.5 rounded-full ${c}`} />
+                ))}
+              </span>
+            )}
           </button>
 
         </div>
 
-        {/* Mobile Menu */}
+      </div>
 
-        {isOpen && (
-          <div className="lg:hidden bg-white border-t border-[#E5E7EB] shadow-lg rounded-b-2xl">
+      {/* Mobile Sidebar Drawer */}
 
-            <div className="flex flex-col py-4">
+      {/* Backdrop */}
+      <div
+        onClick={() => setIsOpen(false)}
+        className={`lg:hidden fixed inset-0 bg-black/40 z-40 transition-opacity duration-300 ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      />
 
+      {/* Sidebar */}
+      <aside
+        className={`lg:hidden fixed top-0 right-0 h-[100dvh] w-4/5 max-w-sm bg-white z-50 shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 h-20 border-b border-[#E5E7EB] shrink-0">
+          <h2 className="text-xl font-bold text-[#1E293B]">
+            JSK<span className="text-[#C9A227]"> Packaging</span>
+          </h2>
+          <button
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+            className="text-[#1E293B]"
+          >
+            <X size={26} />
+          </button>
+        </div>
+
+        {/* Links (scrollable) */}
+        <nav className="flex-1 overflow-y-auto px-4 py-4 flex flex-col">
+          <Link
+            href="/"
+            className="px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/about"
+            className="px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </Link>
+
+          {/* Products - text goes to page, arrow toggles dropdown */}
+          <div className="flex flex-col">
+            <div className="flex items-center justify-between">
               <Link
-                href="/"
-                className="px-4 py-3 text-[#334155]"
+                href="/products"
+                className="flex-1 px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                Products
               </Link>
 
-              <Link
-                href="/about"
-                className="px-4 py-3 text-[#334155]"
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={() => setMobileProductsOpen((prev) => !prev)}
+                className="p-3 text-[#1E293B]"
+                aria-label="Toggle products dropdown"
               >
-                About
-              </Link>
-
-              {/* Mobile Products - text goes to page, arrow toggles dropdown */}
-
-              <div className="flex flex-col">
-
-                <div className="flex items-center justify-between px-4 py-3">
-                  <Link
-                    href="/products"
-                    className="text-[#334155] flex-1"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Products
-                  </Link>
-
-                  <button
-                    onClick={() => setMobileProductsOpen((prev) => !prev)}
-                    className="p-1"
-                    aria-label="Toggle products dropdown"
-                  >
-                    <ChevronDown
-  size={18}
-  className={`text-[#1E293B] transition-transform duration-300 ${
-    mobileProductsOpen ? "rotate-180" : ""
-  }`}
-/>
-                  </button>
-                </div>
-
-                {mobileProductsOpen && (
-                  <div className="flex flex-col bg-[#F8F7F3] mx-4 rounded-xl mb-2">
-                    {products.map((item) => (
-                      <Link
-                        key={item}
-                        href="/products"
-                        className="px-4 py-3 text-[#334155] hover:text-[#C9A227]"
-                        onClick={() => {
-                          setIsOpen(false);
-                          setMobileProductsOpen(false);
-                        }}
-                      >
-                        {item}
-                      </Link>
-                    ))}
-                  </div>
+                {mobileProductsOpen ? (
+                  <Minus size={18} />
+                ) : (
+                  <Plus size={18} />
                 )}
-
-              </div>
-
-              <Link
-                href="/contact"
-                className="px-4 py-3 text-[#334155]"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
-
-              <a
-                href="/catalogue/JSK-Catalogue.pdf"
-                download
-                className="mx-4 mt-3 bg-[#C9A227] text-white py-3 rounded-xl text-center font-medium"
-              >
-                Download E-Catalogue
-              </a>
-
+              </button>
             </div>
 
+            {mobileProductsOpen && (
+              <div className="flex flex-col bg-[#F8F7F3] mx-2 rounded-xl mb-2">
+                {products.map((item) => (
+                  <Link
+                    key={item.slug}
+                    href={`/products/${item.slug}`}
+                    className="px-4 py-3 text-[#334155] hover:text-[#C9A227]"
+                    onClick={() => {
+                      setIsOpen(false);
+                      setMobileProductsOpen(false);
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
-        )}
 
-      </div>
+          <Link
+            href="/contact"
+            className="px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </Link>
+        </nav>
+
+        {/* Download button pinned to bottom */}
+        <div className="p-4 border-t border-[#E5E7EB] shrink-0">
+          <a
+            href="/catalogue/JSK-Catalogue.pdf"
+            download
+            className="flex items-center justify-center gap-2 w-full bg-[#C9A227] text-white py-3 rounded-xl text-center font-medium hover:bg-[#b8911f] transition"
+          >
+            <Download size={18} />
+            Download E-Catalogue
+          </a>
+        </div>
+      </aside>
+
     </header>
   );
 }
