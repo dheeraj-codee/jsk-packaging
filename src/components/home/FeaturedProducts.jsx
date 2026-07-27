@@ -16,7 +16,7 @@ export default function FeaturedProducts() {
     },
     {
       title: "Product Labels",
-      image: "/images/card3.jpg",
+      image: "/images/label/25.png",
       slug: "labels",
     },
     {

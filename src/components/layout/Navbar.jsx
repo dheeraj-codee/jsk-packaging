@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { X, ChevronDown, Download, Plus, Minus } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,24 +52,28 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300 ${
-        scrolled ? "shadow-md" : ""
+        scrolled ? "shadow-sm" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-18">
 
           {/* Logo */}
 
-          <Link href="/">
-            <h2 className="text-2xl font-bold text-[#1E293B] cursor-pointer">
-              JSK
-              <span className="text-[#C9A227]"> Packaging</span>
-            </h2>
-          </Link>
+         <Link href="/" className="flex items-center">
+  <Image
+    src="/images/logo/logo.jpg"
+    alt="JSK Packaging"
+    width={170}
+    height={55}
+    priority
+    className="w-auto h-10 lg:h-12"
+  />
+</Link>
 
           {/* Desktop Menu */}
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-7">
 
             <Link href="/" className={navClass}>
               Home
@@ -93,13 +98,13 @@ export default function Navbar() {
                 />
               </Link>
 
-              <div className="absolute top-10 left-0 bg-white rounded-2xl shadow-2xl border border-[#E5E7EB] p-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-10 left-0 bg-white rounded-2xl shadow-2xl border border-[#E5E7EB] p-3 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
 
                 {products.map((item) => (
                   <Link
                     key={item.slug}
                     href={`/products/${item.slug}`}
-                    className="block px-4 py-3 text-[#334155] rounded-xl hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+                    className="block px-4 py-2.5 text-[#334155] rounded-lg hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
                   >
                     {item.name}
                   </Link>
@@ -121,7 +126,7 @@ export default function Navbar() {
             <a
               href="/catalogue/JSK-Catalogue.pdf"
               download
-              className="bg-[#C9A227] text-white px-6 py-3 rounded-xl font-medium hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-[#C9A227] text-white px-5 py-2.5 rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl"
             >
               E-Catalogue
             </a>
@@ -161,7 +166,7 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <aside
-        className={`lg:hidden fixed top-0 right-0 h-[100dvh] w-4/5 max-w-sm bg-white z-50 shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${
+        className={`lg:hidden fixed top-0 right-0 h-[100dvh] w-[82%] max-w-sm bg-white z-50 shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -183,7 +188,7 @@ export default function Navbar() {
         <nav className="flex-1 overflow-y-auto px-4 py-4 flex flex-col">
           <Link
             href="/"
-            className="px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+            className="px-4 py-2.5 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
             onClick={() => setIsOpen(false)}
           >
             Home
@@ -191,7 +196,7 @@ export default function Navbar() {
 
           <Link
             href="/about"
-            className="px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+            className="px-4 py-2.5 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
             onClick={() => setIsOpen(false)}
           >
             About
@@ -202,7 +207,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
               <Link
                 href="/products"
-                className="flex-1 px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+                className="flex-1 px-4 py-2.5 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
                 onClick={() => setIsOpen(false)}
               >
                 Products
@@ -227,7 +232,7 @@ export default function Navbar() {
                   <Link
                     key={item.slug}
                     href={`/products/${item.slug}`}
-                    className="px-4 py-3 text-[#334155] hover:text-[#C9A227]"
+                    className="px-4 py-2.5 text-[#334155] hover:text-[#C9A227]"
                     onClick={() => {
                       setIsOpen(false);
                       setMobileProductsOpen(false);
@@ -242,7 +247,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="px-4 py-3 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
+            className="px-4 py-2.5 rounded-xl font-semibold text-[#334155] hover:bg-[#F8F7F3] hover:text-[#C9A227] transition"
             onClick={() => setIsOpen(false)}
           >
             Contact
@@ -254,7 +259,7 @@ export default function Navbar() {
           <a
             href="/catalogue/JSK-Catalogue.pdf"
             download
-            className="flex items-center justify-center gap-2 w-full bg-[#C9A227] text-white py-3 rounded-xl text-center font-medium hover:bg-[#b8911f] transition"
+            className="flex items-center justify-center gap-2 w-full bg-[#C9A227] text-white py-2.5 rounded-lg text-center font-medium hover:bg-[#b8911f] transition"
           >
             <Download size={18} />
             Download E-Catalogue

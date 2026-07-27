@@ -20,16 +20,16 @@ export default function ContactSection() {
 
   <div className="absolute top-0 right-0 w-72 h-72 bg-[#C9A227]/20 blur-[120px]" />
 
-  <span className="text-[#C9A227] font-semibold">
-    Contact Information
+<span className="text-sm font-semibold text-[#C9A227] uppercase tracking-wider">
+      Contact Information
   </span>
 
-  <h2 className="text-3xl md:text-4xl font-bold mt-4">
-    Let's Discuss Your Packaging Project
+<h2 className="text-2xl md:text-3xl font-bold mt-4 leading-tight">
+      Let's Discuss Your Packaging Project
   </h2>
 
-  <p className="text-slate-300 mt-5 leading-relaxed">
-    Whether you need rigid boxes, mono cartons,
+<p className="text-[15px] text-slate-300 mt-4 leading-7">
+      Whether you need rigid boxes, mono cartons,
     labels or luxury packaging, our team is ready
     to provide the perfect solution.
   </p>
@@ -48,14 +48,12 @@ export default function ContactSection() {
 
          <a
           href="tel:+919314235578"
-          className="block text-lg text-slate-300 hover:text-[#C9A227] transition"
-        >
+className="block text-[15px] text-slate-300 hover:text-[#C9A227] transition"        >
           +91 93142 35578
         </a>
         <a
           href="tel:+919828411787"
-          className="block text-lg text-slate-300 hover:text-[#C9A227] transition"
-        >
+className="block text-[15px] text-slate-300 hover:text-[#C9A227] transition"        >
           +91 98284 11787
         </a>
 
@@ -66,22 +64,28 @@ export default function ContactSection() {
 
     {/* Email */}
 
-    <div className="flex gap-5 items-start">
+   <div className="flex gap-5 items-start">
 
-      <div className="w-14 h-14 rounded-2xl bg-[#C9A227] flex items-center justify-center shrink-0">
-        <Mail size={24} />
-      </div>
+  <div className="w-14 h-14 rounded-2xl bg-[#C9A227] flex items-center justify-center shrink-0">
+    <Mail size={24} />
+  </div>
 
-      <div>
-        <a
-          href="mailto:jskpackaging22@gmail.com"
-          className="text-lg text-slate-300 hover:text-[#C9A227] transition break-all"
-        >
-          jskpackaging22@gmail.com
-        </a>
-      </div>
+  <div className="flex flex-col">
+    <a
+      href="mailto:info@jskpackaging.in"
+className="text-[15px] text-slate-300 hover:text-[#C9A227] transition break-all"    >
+      info@jskpackaging.in
+    </a>
 
-    </div>
+    <a
+      href="mailto:jskpackaging22@gmail.com"
+      className="text-[15px] text-slate-300 hover:text-[#C9A227] transition break-all"    >
+
+      jskpackaging22@gmail.com
+    </a>
+  </div>
+
+</div>
 
     {/* Address */}
 
@@ -95,8 +99,7 @@ export default function ContactSection() {
         href="https://maps.google.com/?q=D-25 Sudarshanpura Industrial Area Jaipur"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-lg text-slate-300 hover:text-[#C9A227] transition leading-relaxed"
-      >
+className="text-[15px] text-slate-300 hover:text-[#C9A227] transition leading-7"      >
         D-25, Sudarshanpura Industrial Area,
         22 Godam, Jaipur, Rajasthan
       </a>
@@ -109,8 +112,8 @@ export default function ContactSection() {
 
   <div className="mt-12">
 
-    <p className="text-[#C9A227] font-medium mb-5">
-      Follow Us
+<p className="text-sm font-semibold text-[#C9A227] uppercase tracking-wider mb-5">
+        Follow Us
     </p>
 
     <div className="flex gap-4">
@@ -139,16 +142,16 @@ export default function ContactSection() {
 
           <div className="bg-white/80 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 border border-[#E5E7EB] shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
 
-  <span className="text-[#C9A227] font-semibold">
-    Request A Quote
+<span className="text-sm font-semibold text-[#C9A227] uppercase tracking-wider">
+      Request A Quote
   </span>
 
-  <h3 className="text-3xl md:text-4xl font-bold text-[#1E293B] mt-2">
-    Let's Discuss Your Project
+<h3 className="text-2xl md:text-3xl font-bold text-[#1E293B] mt-2 leading-tight">
+      Let's Discuss Your Project
   </h3>
 
-  <p className="text-[#64748B] mt-3">
-    Fill out the form and our team will get back to you shortly.
+<p className="text-[15px] text-[#64748B] mt-3 leading-7">
+      Fill out the form and our team will get back to you shortly.
   </p>
 
   <form className="mt-8">
@@ -158,25 +161,25 @@ export default function ContactSection() {
       <input
         type="text"
         placeholder="Full Name"
-        className="h-14 px-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
+        className="h-12 px-4 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
       />
 
       <input
         type="text"
         placeholder="Phone Number"
-        className="h-14 px-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
+        className="h-12 px-4 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
       />
 
       <input
         type="email"
         placeholder="Email Address"
-        className="h-14 px-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
+        className="h-12 px-4 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
       />
 
       <input
         type="text"
         placeholder="Company Name"
-        className="h-14 px-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
+        className="h-12 px-4 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
       />
 
     </div>
@@ -184,18 +187,18 @@ export default function ContactSection() {
     <input
       type="text"
       placeholder="Packaging Requirement"
-      className="w-full h-14 px-5 mt-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
+      className="w-full h-12 px-4 mt-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none"
     />
 
     <textarea
-      rows="6"
+      rows="5"
       placeholder="Tell us about your packaging requirements..."
-      className="w-full px-5 py-4 mt-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none resize-none"
+      className="w-full px-4 py-3 mt-5 rounded-xl bg-white text-[#1E293B] placeholder:text-slate-500 border border-slate-200 focus:border-[#C9A227] focus:ring-4 focus:ring-[#C9A227]/10 transition-all outline-none resize-none"
     />
 
     <button
       type="submit"
-      className="w-full mt-6 h-14 rounded-xl bg-gradient-to-r from-[#C9A227] to-[#D8B54A] text-white font-semibold shadow-lg shadow-[#C9A227]/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#C9A227]/40 transition-all duration-300"
+      className="w-full mt-6 h-12 rounded-xl bg-gradient-to-r from-[#C9A227] to-[#D8B54A] text-white font-semibold shadow-lg shadow-[#C9A227]/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#C9A227]/40 transition-all duration-300"
     >
       Request A Quote
     </button>

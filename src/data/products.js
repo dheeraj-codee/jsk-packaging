@@ -50,10 +50,10 @@ export const products = [
     description:
       "Custom die-cut adhesive labels that strengthen brand identity across bottles, jars and product packaging.",
     gallery: [
-      "/images/lb1.jpg",
-      "/images/lb2.webp",
-      "/images/lb3.jpg",
-      "/images/lb4.jpg",
+      "/images/label/25.png",
+      "/images/label/26.png",
+      "/images/label/27.png",
+      "/images/label/28.png",
     ],
     specs: [
       { label: "Material", value: "Art Paper / Vinyl" },

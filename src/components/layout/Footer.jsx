@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 import { Phone, Mail, MapPin } from "lucide-react";
 import {
   FaFacebookF,
@@ -14,12 +16,19 @@ export default function Footer() {
           {/* Company Info */}
 
           <div>
-            <h2 className="text-3xl font-bold">
-              JSK <span className="text-[#C9A227]">Packaging</span>
-            </h2>
+           <Link href="/" className="flex items-center">
+  <Image
+    src="/images/logo/logo.jpg"
+    alt="JSK Packaging"
+    width={170}
+    height={55}
+    priority
+    className="w-auto h-10 lg:h-12"
+  />
+</Link>
 
-            <p className="mt-5 text-gray-300 leading-relaxed">
-              Premium packaging solutions including rigid boxes,
+<p className="mt-4 text-[15px] text-gray-300 leading-7">
+                Premium packaging solutions including rigid boxes,
               mono cartons, labels, jewellery boxes, gift boxes
               and custom packaging products for modern brands.
             </p>
@@ -28,16 +37,16 @@ export default function Footer() {
 
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C9A227] transition-all duration-300"
+                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C9A227] transition-all duration-300"
               >
-                <FaFacebookF size={18} />
+                <FaFacebookF size={16} />
               </a>
 
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C9A227] transition-all duration-300"
+                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C9A227] transition-all duration-300"
               >
-                <FaInstagram size={18} />
+                <FaInstagram size={16} />
               </a>
 
             </div>
@@ -46,12 +55,11 @@ export default function Footer() {
           {/* Quick Links */}
 
           <div>
-            <h3 className="text-xl font-semibold mb-5 text-[#C9A227]">
-              Quick Links
+<h3 className="text-lg font-semibold mb-4 text-[#C9A227] uppercase tracking-wide">
+                Quick Links
             </h3>
 
-            <ul className="space-y-3 text-gray-300">
-
+<ul className="space-y-2.5 text-[15px] text-gray-300">
               <li>
                 <Link
                   href="/"
@@ -188,22 +196,20 @@ export default function Footer() {
 
                 <Phone
                   className="text-[#C9A227] shrink-0 mt-1"
-                  size={24}
+                  size={20}
                 />
 
                 <div>
 
                    <a
                     href="tel:+919314235578"
-                    className="block text-gray-300 hover:text-[#C9A227] transition"
-                  >
+className="block text-[15px] text-gray-300 hover:text-[#C9A227] transition"                  >
                     +91 93142 35578
                   </a>
 
                   <a
                     href="tel:+919828411787"
-                    className="block text-gray-300 hover:text-[#C9A227] transition"
-                  >
+className="block text-[15px] text-gray-300 hover:text-[#C9A227] transition"                  >
                     +91 98284 11787
                   </a>
 
@@ -214,34 +220,38 @@ export default function Footer() {
               </div>
 
               <div className="flex gap-4 items-start">
+  <Mail
+    className="text-[#C9A227] shrink-0 mt-1"
+    size={20}
+  />
 
-                <Mail
-                  className="text-[#C9A227] shrink-0 mt-1"
-                  size={24}
-                />
+  <div className="flex flex-col">
+    <a
+      href="mailto:info@jskpackaging.in"
+className="text-[15px] text-gray-300 hover:text-[#C9A227] transition break-all"    >
+      info@jskpackaging.in
+    </a>
 
-                <a
-                  href="mailto:jskpackaging22@gmail.com"
-                  className="text-gray-300 hover:text-[#C9A227] transition break-all"
-                >
-                  jskpackaging22@gmail.com
-                </a>
-
-              </div>
+    <a
+      href="mailto:jskpackaging22@gmail.com"
+className="text-[15px] text-gray-300 hover:text-[#C9A227] transition break-all"    >
+      jskpackaging22@gmail.com
+    </a>
+  </div>
+</div>
 
               <div className="flex gap-4 items-start">
 
                 <MapPin
                   className="text-[#C9A227] shrink-0 mt-1"
-                  size={30}
+                  size={22}
                 />
 
                 <a
                   href="https://maps.google.com/?q=D-25 Sudarshanpura Industrial Area Jaipur"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#C9A227] transition leading-relaxed"
-                >
+className="text-[15px] text-gray-300 hover:text-[#C9A227] transition leading-7"                >
                   D-25, Sudarshanpura Industrial Area,
                   22 Godam, Jaipur, Rajasthan
                 </a>
@@ -256,11 +266,11 @@ export default function Footer() {
         {/* Bottom Bar */}
 
 <div className="border-t border-white/10 mt-10 pt-6 flex flex-col lg:flex-row items-center justify-between gap-3">
-  <p className="text-gray-400 text-center lg:text-left">
-    © {new Date().getFullYear()} JSK Packaging. All Rights Reserved.
+<p className="text-sm text-gray-400 text-center lg:text-left">
+      © {new Date().getFullYear()} JSK Packaging. All Rights Reserved.
   </p>
 
-  <p className="text-gray-400 text-center lg:text-right">
+  <p className=" text-sm text-gray-400 text-center lg:text-right">
     Designed & Developed by{" "}
     <a
       href="https://www.brandingguide.in/"
