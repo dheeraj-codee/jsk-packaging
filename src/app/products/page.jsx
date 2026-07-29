@@ -21,7 +21,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.jskpackaging.com/products",
+    canonical: "https://www.jskpackaging.in/products",
   },
 
   openGraph: {
@@ -31,7 +31,7 @@ export const metadata = {
     description:
       "Discover luxury rigid boxes, mono cartons, labels, jewellery boxes and custom packaging solutions from JSK Packaging.",
 
-    url: "https://www.jskpackaging.com/products",
+    url: "https://www.jskpackaging.in/products",
 
     siteName: "JSK Packaging",
 

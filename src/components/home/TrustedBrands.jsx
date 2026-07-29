@@ -48,16 +48,16 @@ export default function TrustedBrands() {
         
         {/* Top Heading */}
         <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-block px-4 py-2 rounded-full bg-[#F8F7F3] text-[#C9A227] font-medium">
+          <span className="inline-block px-4 py-2 rounded-full bg-[#F8F7F3] text-sm text-[#C9A227] font-medium">
             Why Leading Brands Choose Us
           </span>
 
-          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B]">
             Trusted Packaging Partner For
             <span className="text-[#C9A227]"> Growing Brands</span>
           </h2>
 
-          <p className="mt-6 text-lg text-[#64748B] leading-relaxed">
+          <p className="mt-6 text-md text-[#64748B] leading-relaxed">
             We help businesses create premium packaging experiences through
             innovative design, superior materials and world-class printing
             solutions.
@@ -67,37 +67,37 @@ export default function TrustedBrands() {
         {/* Stats — untouched, CountUp animation as-is */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
-            <h3 className="text-4xl font-bold text-[#1E293B]">
+            <h3 className="text-3xl font-bold text-[#1E293B]">
               <CountUp end={150} suffix="+" />
             </h3>
-            <p className="mt-2 text-[#64748B]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Packaging Projects
             </p>
           </div>
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
-            <h3 className="text-4xl font-bold text-[#1E293B]">
+            <h3 className="text-3xl font-bold text-[#1E293B]">
               <CountUp end={50} suffix="+" />
             </h3>
-            <p className="mt-2 text-[#64748B]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Happy Clients
             </p>
           </div>
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
-            <h3 className="text-4xl font-bold text-[#1E293B]">
+            <h3 className="text-3xl font-bold text-[#1E293B]">
               <CountUp end={5} suffix="+" />
             </h3>
-            <p className="mt-2 text-[#64748B]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Years Experience
             </p>
           </div>
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
-            <h3 className="text-4xl font-bold text-[#1E293B]">
+            <h3 className="text-3xl font-bold text-[#1E293B]">
               <CountUp end={100} suffix="%" />
             </h3>
-            <p className="mt-2 text-[#64748B]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Quality Focused
             </p>
           </div>

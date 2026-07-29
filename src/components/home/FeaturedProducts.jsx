@@ -11,7 +11,7 @@ export default function FeaturedProducts() {
     },
     {
       title: "Mono Carton Boxes",
-      image: "/images/mono/8.png",
+      image: "/images/mono/6.png",
       slug: "mono-cartons",
     },
     {
@@ -36,7 +36,7 @@ export default function FeaturedProducts() {
     },
     {
       title: "Window Boxes",
-      image: "/images/card7.jpg",
+      image: "/images/window/29.png",
       slug: "window-boxes",
     },
     {
@@ -51,16 +51,16 @@ export default function FeaturedProducts() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex px-4 py-2 rounded-full bg-[#F8F7F3] text-[#C9A227] font-medium">
+          <span className="inline-flex px-4 py-2 rounded-full bg-[#F8F7F3] text-sm text-[#C9A227] font-medium">
             Our Products
           </span>
 
-          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B]">
             Explore Our Premium
             <span className="text-[#C9A227]"> Packaging Range</span>
           </h2>
 
-          <p className="mt-6 text-lg text-[#64748B]">
+          <p className="mt-6 text-md text-[#64748B]">
             Designed to enhance product presentation and strengthen brand identity.
           </p>
         </div>

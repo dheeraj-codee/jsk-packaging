@@ -40,16 +40,16 @@ export default function ManufacturingProcess() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex px-4 py-2 rounded-full bg-white text-[#C9A227] font-medium">
+          <span className="inline-flex px-4 py-2 rounded-full bg-white text-sm text-[#C9A227] font-medium">
             Our Process
           </span>
 
-          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B]">
             From Concept To
             <span className="text-[#C9A227]"> Final Delivery</span>
           </h2>
 
-          <p className="mt-6 text-lg text-[#64748B]">
+          <p className="mt-6 text-md text-[#64748B]">
             A streamlined process designed to deliver premium packaging
             solutions with consistency, quality and speed.
           </p>
@@ -72,7 +72,7 @@ export default function ManufacturingProcess() {
                 {step.title}
               </h3>
 
-              <p className="mt-4 text-[#64748B] leading-relaxed">
+              <p className="mt-4 text-sm text-[#64748B] leading-relaxed">
                 {step.desc}
               </p>
             </div>

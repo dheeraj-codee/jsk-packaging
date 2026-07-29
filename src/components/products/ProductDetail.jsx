@@ -117,13 +117,13 @@ export default function ProductDetail({ product }) {
               {/* Product Overview — fills the space below the image */}
               <div className="rounded-2xl bg-[#F8F7F3] p-5">
                 <h2 className="text-2xl font-bold text-[#1E293B]">Product Overview</h2>
-                <p className="mt-2.5 text-lg text-slate-600 leading-6">
+                <p className="mt-2.5 text-md text-slate-600 leading-6">
                   {product.title} is manufactured using premium quality materials to provide
                   excellent durability, elegant presentation and superior protection. Designed
                   for modern brands, our packaging solutions combine attractive aesthetics with
                   outstanding structural strength.
                 </p>
-                <p className="mt-2.5 text-lg text-slate-600 leading-6">
+                <p className="mt-2.5 text-md text-slate-600 leading-6">
                   At JSK Packaging, every box is produced with advanced printing, precision
                   finishing and strict quality control. We offer complete customization
                   including size, material, lamination, UV coating, foil stamping, embossing
@@ -217,10 +217,10 @@ export default function ProductDetail({ product }) {
 
         {/* Bottom CTA */}
         <div className="mt-8 rounded-[28px] bg-gradient-to-r from-[#C9A227] to-[#E4C157] p-8 sm:p-10 text-center text-white shadow-xl">
-          <h2 className="text-2xl md:text-4xl font-bold">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
             Looking for Premium Custom Packaging?
           </h2>
-          <p className="mt-3 text-white/90 max-w-2xl mx-auto leading-7">
+          <p className="mt-3 text-md text-white/90 max-w-2xl mx-auto leading-7">
             Get high-quality custom packaging solutions designed specifically for your
             products. Contact our experts today and receive a free consultation with the best
             packaging recommendations.

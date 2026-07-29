@@ -44,16 +44,16 @@ export default function FAQ() {
     <section className="py-16 bg-[#F8F7F3]">
       <div className="max-w-5xl mx-auto px-6 lg:px-10">
         <div className="text-center">
-          <span className="inline-flex px-4 py-2 rounded-full bg-white text-[#C9A227] font-medium">
+          <span className="inline-flex px-4 py-2 rounded-full bg-white text-sm text-[#C9A227] font-medium">
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-5 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B]">
             Got Questions?
             <span className="text-[#C9A227]"> We've Got Answers</span>
           </h2>
 
-          <p className="mt-6 text-lg text-[#64748B]">
+          <p className="mt-6 text-md text-[#64748B]">
             Find answers to common questions about our packaging products,
             customization options and manufacturing process.
           </p>
@@ -80,9 +80,9 @@ export default function FAQ() {
                   transition={{ duration: 0.3 }}
                 >
                   {openIndex === index ? (
-                    <Minus className="text-[#C9A227]" />
+                    <Minus className="text-sm text-[#C9A227]" />
                   ) : (
-                    <Plus className="text-[#C9A227]" />
+                    <Plus className="text-sm text-[#C9A227]" />
                   )}
                 </motion.div>
               </button>

@@ -25,7 +25,7 @@ export const metadata = {
   description:
     "Read the Terms & Conditions governing the use of the JSK Packaging website and our packaging products and services.",
   alternates: {
-    canonical: "https://www.jskpackaging.com/terms-and-conditions",
+    canonical: "https://www.jskpackaging.in/terms-and-conditions",
   },
 };
 
@@ -198,11 +198,11 @@ export default function TermsConditionsPage() {
             Legal Information
           </span>
 
-          <h1 className="mt-6 text-4xl md:text-5xl font-bold text-white">
+          <h1 className="mt-6 text-2xl md:text-3xl lg:text-4xl font-bold text-white">
             Terms &amp; Conditions
           </h1>
 
-          <p className="mt-5 max-w-2xl text-lg text-white/70 leading-relaxed">
+          <p className="mt-5 max-w-2xl text-md text-white/70 leading-relaxed">
             Please read these terms carefully. They govern your use of the
             JSK Packaging website and the packaging products and services we
             provide.
@@ -244,7 +244,7 @@ export default function TermsConditionsPage() {
 
             {/* Intro card */}
             <div className="rounded-2xl bg-[#F8F7F3] border border-[#EDEBE3] p-6 sm:p-8">
-              <p className="text-[#475569] leading-8">
+              <p className="text-md text-[#475569] leading-8">
                 These Terms &amp; Conditions constitute a legally binding
                 agreement between you (the &ldquo;customer&rdquo; or
                 &ldquo;user&rdquo;) and JSK Packaging. By using our website or
@@ -305,7 +305,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-2xl font-bold">
                 Questions About These Terms?
               </h2>
-              <p className="mt-3 text-white/70 leading-8 max-w-2xl">
+              <p className="mt-3 text-md text-white/70 leading-8 max-w-2xl">
                 If you have any questions regarding these Terms &amp;
                 Conditions, please reach out to us through any of the channels
                 below. Our team will be happy to assist you.

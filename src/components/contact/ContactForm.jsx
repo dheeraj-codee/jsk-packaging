@@ -8,7 +8,7 @@ export default function ContactForm() {
             Request A Quote
           </span>
 
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B]">
             Tell Us About Your Packaging Requirement
           </h2>
         </div>

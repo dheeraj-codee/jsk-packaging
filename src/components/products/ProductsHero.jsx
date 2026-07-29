@@ -21,25 +21,16 @@ export default function ProductsHero() {
         <div className="max-w-4xl mx-auto text-center">
 
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full border border-[#C9A227]/30 bg-white px-4 py-2 md:px-6 md:py-3 shadow-md"
-          >
-            <PackageCheck className="w-4 h-4 md:w-5 md:h-5 text-[#C9A227]" />
-
-            <span className="text-sm md:text-base font-semibold text-[#C9A227]">
-              Premium Packaging Solutions
-            </span>
-          </motion.div>
+           <span className="inline-flex items-center px-5 py-2 rounded-full bg-white border border-[#C9A227]/20 text-sm text-[#C9A227] font-semibold shadow-sm">
+            Premium Packaging Solutions
+          </span>
 
           {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mt-6 text-3xl  md:text-4xl lg:text-5xl font-bold leading-[1.15] text-[#1E293B]"
+            className="mt-6 text-2xl  md:text-3xl lg:text-4xl font-bold leading-[1.15] text-[#1E293B]"
           >
             Packaging That{" "}
             <span className="text-[#C9A227]">
@@ -52,7 +43,7 @@ export default function ProductsHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35 }}
-            className="mt-5 max-w-2xl mx-auto px-2 text-[15px] sm:text-base md:text-lg leading-7 md:leading-8 text-[#64748B]"
+            className="mt-5 max-w-2xl mx-auto px-2 text-[15px] sm:text-base text-md leading-7 md:leading-8 text-[#64748B]"
           >
             Explore our premium collection of rigid boxes,
             mono cartons, labels, jewellery boxes,
@@ -87,7 +78,7 @@ export default function ProductsHero() {
           <div className="mt-10 md:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
 
             {[
-              ["500+", "Projects"],
+              ["1000+", "Projects"],
               ["100%", "Custom Design"],
               ["Premium", "Quality"],
               ["Fast", "Delivery"],

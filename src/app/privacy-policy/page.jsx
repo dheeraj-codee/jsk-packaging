@@ -21,7 +21,7 @@ export const metadata = {
   description:
     "Learn how JSK Packaging collects, uses, stores and protects the personal information you share with us through our website and services.",
   alternates: {
-    canonical: "https://www.jskpackaging.com/privacy-policy",
+    canonical: "https://www.jskpackaging.in/privacy-policy",
   },
 };
 
@@ -161,11 +161,11 @@ export default function PrivacyPolicyPage() {
             Legal Information
           </span>
 
-          <h1 className="mt-6 text-4xl md:text-5xl font-bold text-white">
+          <h1 className="mt-6 text-2xl md:text-3xl lg:text-4xl font-bold text-white">
             Privacy Policy
           </h1>
 
-          <p className="mt-5 max-w-2xl text-lg text-white/70 leading-relaxed">
+          <p className="mt-5 max-w-2xl text-md text-white/70 leading-relaxed">
             Your privacy matters to us. This policy explains how JSK Packaging
             collects, uses and protects the personal information you share
             with us.

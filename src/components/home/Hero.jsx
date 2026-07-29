@@ -20,13 +20,13 @@ export default function Hero() {
               Premium Packaging Manufacturer in Jaipur
             </span>
 
-            <h1 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B] text-center lg:text-left">
+            <h1 className="mt-6 text-3xl md:text-4xl lg:text-4xl font-bold leading-tight text-[#1E293B] text-center lg:text-left">
               Premium
               <span className="text-[#C9A227]"> Packaging </span>
               Solutions For Modern Brands
             </h1>
 
-            <p className="mt-6 text-lg text-[#334155] leading-relaxed max-w-xl text-center lg:text-left">
+            <p className="mt-6 text-md text-[#334155] leading-relaxed max-w-xl text-center lg:text-left">
               JSK Packaging specializes in premium rigid boxes,
               mono cartons, product labels, jewellery boxes,
               gift boxes and custom packaging solutions that
@@ -57,7 +57,7 @@ export default function Hero() {
                 <h3 className="text-3xl font-bold text-[#1E293B]">
                   150+
                 </h3>
-                <p className="text-[#64748B]">
+                <p className="text-sm text-[#64748B]">
                   Projects Delivered
                 </p>
               </div>
@@ -66,7 +66,7 @@ export default function Hero() {
                 <h3 className="text-3xl font-bold text-[#1E293B]">
                   50+
                 </h3>
-                <p className="text-[#64748B]">
+                <p className="text-sm text-[#64748B]">
                   Happy Clients
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function Hero() {
                 <h3 className="text-3xl font-bold text-[#1E293B]">
                   5+
                 </h3>
-                <p className="text-[#64748B]">
+                <p className="text-sm text-[#64748B]">
                   Years Experience
                 </p>
               </div>

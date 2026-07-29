@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  Factory,
   Cog,
   ShieldCheck,
   Users,
@@ -19,12 +18,12 @@ export default function Infrastructure() {
     {
       icon: ShieldCheck,
       title: "Quality Control",
-      desc: "Strict quality checks at every stage of production.",
+      desc: "Strict quality checks at every stage of production since 2021.",
     },
     {
       icon: Package,
       title: "Production Capacity",
-      desc: "Efficient handling of both small and bulk packaging orders.",
+      desc: "Thousands of boxes supplied, handling both small and bulk packaging orders.",
     },
     {
       icon: Users,
@@ -38,11 +37,11 @@ export default function Infrastructure() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="inline-flex px-4 py-2 rounded-full bg-[#F8F7F3] text-[#C9A227] font-medium">
+          <span className="inline-flex px-4 py-2 rounded-full bg-[#F8F7F3] text-sm text-[#C9A227] font-medium">
             Infrastructure
           </span>
 
-          <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B]">
+          <h2 className="mt-6 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B]">
             Built For Quality &
             <span className="text-[#C9A227]"> Scale</span>
           </h2>
@@ -57,14 +56,13 @@ export default function Infrastructure() {
             transition={{ duration: .8 }}
           >
             <img
-              src="/infrastructure.jpg"
+              src="/images/about/about-infrastructure.png"
               alt="Infrastructure"
-              className="w-full h-[700px] object-cover rounded-[32px] shadow-2xl"
+              className="w-full h-[320px] sm:h-[420px] md:h-[500px] lg:h-[560px] object-cover rounded-[32px] shadow-2xl"
             />
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-6">
-
             {features.map((item, index) => (
               <motion.div
                 key={index}
@@ -75,10 +73,7 @@ export default function Infrastructure() {
                 className="bg-[#F8F7F3] p-8 rounded-3xl border border-[#E5E7EB] hover:-translate-y-2 hover:shadow-xl transition-all"
               >
                 <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center">
-                  <item.icon
-                    size={26}
-                    className="text-[#C9A227]"
-                  />
+                  <item.icon size={26} className="text-[#C9A227]" />
                 </div>
 
                 <h3 className="mt-5 text-xl font-bold text-[#1E293B]">
@@ -90,7 +85,6 @@ export default function Infrastructure() {
                 </p>
               </motion.div>
             ))}
-
           </div>
 
         </div>

@@ -10,16 +10,16 @@ export default function MissionVision() {
 
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex items-center px-5 py-2 rounded-full bg-white border border-[#C9A227]/20 text-[#C9A227] font-semibold shadow-sm">
+          <span className="inline-flex items-center px-5 py-2 rounded-full bg-white border border-[#C9A227]/20 text-sm text-[#C9A227] font-semibold shadow-sm">
             Mission & Vision
           </span>
 
-          <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B] leading-tight">
+          <h2 className="mt-6 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
             Driven By Purpose,
             <span className="text-[#C9A227]"> Focused On Excellence</span>
           </h2>
 
-          <p className="mt-6 text-lg text-[#64748B] leading-8">
+          <p className="mt-6 text-md text-[#64748B] leading-8">
             Every package we create reflects our commitment to quality,
             innovation and customer satisfaction.
           </p>
@@ -58,7 +58,7 @@ export default function MissionVision() {
                 That Builds Brands
               </h3>
 
-              <p className="mt-6 text-[#64748B] leading-8">
+              <p className="mt-6 text-md text-[#64748B] leading-8">
                 We provide innovative and premium packaging solutions
                 that strengthen brand identity, improve product
                 presentation and create memorable customer experiences
@@ -98,7 +98,7 @@ export default function MissionVision() {
                 Trusted Packaging Partner
               </h3>
 
-              <p className="mt-6 text-gray-300 leading-8">
+              <p className="mt-6 text-md text-gray-300 leading-8">
                 Our vision is to become one of India's most trusted
                 packaging manufacturers by delivering exceptional
                 quality, continuous innovation and sustainable value

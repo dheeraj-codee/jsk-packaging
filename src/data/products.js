@@ -134,9 +134,10 @@ export const products = [
     description:
       "Attractive PVC window boxes that showcase the product inside while keeping it protected on the shelf.",
     gallery: [
-      "/images/wn2.jpg",
-      "/images/wn3.jpg",
-      "/images/wn4.webp",
+      "/images/window/29.png",
+      "/images/window/30.png",
+      "/images/window/31.png",
+      "/images/window/32.png",
     ],
     specs: [
       { label: "Material", value: "Kraft / Rigid Board" },

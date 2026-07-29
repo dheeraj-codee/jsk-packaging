@@ -12,7 +12,6 @@ export default function AboutHero() {
       <div className="absolute top-20 left-10 w-80 h-80 bg-[#C9A227]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#1E293B]/10 rounded-full blur-3xl" />
 
-      {/* Better responsive container */}
       <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-10 lg:px-10 py-24 lg:py-28">
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-24 items-center">
@@ -24,11 +23,11 @@ export default function AboutHero() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left flex flex-col items-center lg:items-start"
           >
-            <span className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-white border border-[#E5E7EB] text-[#C9A227] font-medium">
+            <span className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-white border border-[#E5E7EB] text-sm text-[#C9A227] font-medium">
               About JSK Packaging
             </span>
 
-            <h1 className="mt-8 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
+            <h1 className="mt-8 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-[#1E293B]">
               Premium Packaging
               <br />
               Solutions Built To
@@ -37,12 +36,25 @@ export default function AboutHero() {
               </span>
             </h1>
 
-            <p className="mt-8 text-base text-[#64748B] leading-relaxed max-w-xl">
-              JSK Packaging specializes in rigid boxes,
-              mono cartons, labels, jewellery boxes and
-              luxury custom packaging designed to enhance
-              product presentation and strengthen brand value.
+            <p className="mt-8 text-base text-[#64748B] textmd leading-relaxed max-w-xl">
+              Founded in 2021 by <span className="font-semibold text-[#1E293B]">Amit Khandelwal</span> and{" "}
+              <span className="font-semibold text-[#1E293B]">Jatin Khandelwal</span>,
+              JSK Packaging specializes in rigid boxes, jewellery boxes,
+              sweet boxes, gift boxes and end packaging solutions designed
+              to enhance product presentation and strengthen brand value.
             </p>
+
+            {/* Trust Badges */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+              <div className="flex items-center gap-2 rounded-xl bg-white border border-[#E5E7EB] px-5 py-3 shadow-sm">
+                <span className="text-xl font-bold text-[#C9A227]">1000+</span>
+                <span className="text-sm text-[#64748B]">Boxes Supplied</span>
+              </div>
+              <div className="flex items-center gap-2 rounded-xl bg-white border border-[#E5E7EB] px-5 py-3 shadow-sm">
+                <span className="text-xl font-bold text-[#C9A227]">50+</span>
+                <span className="text-sm text-[#64748B]">Happy Customers</span>
+              </div>
+            </div>
 
             {/* Buttons */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
@@ -73,9 +85,9 @@ export default function AboutHero() {
             <div className="absolute -inset-6 bg-[#C9A227]/10 blur-3xl rounded-[40px]" />
 
             <img
-              src="/about-hero.jpg"
+              src="/images/about/about-hero-2.png"
               alt="JSK Packaging"
-              className="relative rounded-[32px] shadow-2xl w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[650px] object-cover"
+              className="relative rounded-[32px] shadow-2xl w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[520px] object-cover"
             />
           </motion.div>
 

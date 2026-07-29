@@ -14,13 +14,13 @@ export default function ContactHero() {
 
           {/* Badge */}
 
-          <span className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white border border-[#E5E7EB] text-[#1E293B] text-sm font-medium">
+          <span className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white border border-[#E5E7EB] text-sm text-[#1E293B] text-sm font-medium">
             Premium Packaging Manufacturer in Jaipur
           </span>
 
           {/* Heading */}
 
-          <h1 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
+          <h1 className="mt-6 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-[#1E293B]">
             Let's Create
             <span className="text-[#C9A227]"> Packaging </span>
             That Elevates Your Brand
@@ -28,7 +28,7 @@ export default function ContactHero() {
 
           {/* Description */}
 
-          <p className="mt-6 text-lg text-[#334155] leading-relaxed max-w-3xl">
+          <p className="mt-6 text-md text-[#334155] leading-relaxed max-w-3xl">
             Whether you need premium rigid boxes, mono cartons,
             product labels, jewellery boxes, gift boxes or fully
             customized packaging, our experts are ready to help
