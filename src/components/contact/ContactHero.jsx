@@ -36,27 +36,8 @@ export default function ContactHero() {
             solutions.
           </p>
 
-          {/* Buttons */}
 
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-
-            <a
-              href="#contact-form"
-              className="px-7 py-4 rounded-xl bg-[#C9A227] text-white font-semibold hover:scale-105 transition flex items-center gap-2"
-            >
-              Get Free Quote
-              <ArrowRight size={18} />
-            </a>
-
-            <a
-              href="tel:+919314235578"
-              className="px-7 py-4 rounded-xl border border-[#1E293B] text-[#1E293B] font-semibold hover:bg-[#1E293B] hover:text-white transition flex items-center gap-2"
-            >
-              <Phone size={18} />
-              Call Our Expert
-            </a>
-
-          </div>
+          
 
         </div>
 

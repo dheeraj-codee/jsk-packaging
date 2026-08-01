@@ -53,7 +53,7 @@ export default function CTASection() {
                 1000+
               </h3>
               <p className="text-gray-300 mt-2">
-                Packaging Projects
+                Packaging Boxes
               </p>
             </div>
 

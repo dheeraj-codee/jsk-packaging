@@ -62,8 +62,8 @@ export default function ProductDetail({ product }) {
   const [zoom, setZoom] = useState(false);
 
   return (
-    <section className="bg-[#F8F7F3] py-14 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section className="bg-[#F8F7F3] pt-28 pb-14 md:pt-20 md:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <Link
           href="/products"
@@ -107,7 +107,7 @@ export default function ProductDetail({ product }) {
                   </div>
                   <button
                     onClick={() => setZoom(true)}
-                    className="absolute bottom-4 right-4 h-11 w-11 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-[#C9A227] hover:text-white transition"
+                    className="absolute bottom-4 right-4 h-11 w-11 rounded-full bg-[#C9A227] shadow-lg flex items-center justify-center hover:bg-white hover:text-[#C9A227] transition"
                   >
                     <Maximize2 size={18} />
                   </button>
@@ -215,24 +215,7 @@ export default function ProductDetail({ product }) {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-8 rounded-[28px] bg-gradient-to-r from-[#C9A227] to-[#E4C157] p-8 sm:p-10 text-center text-white shadow-xl">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-            Looking for Premium Custom Packaging?
-          </h2>
-          <p className="mt-3 text-md text-white/90 max-w-2xl mx-auto leading-7">
-            Get high-quality custom packaging solutions designed specifically for your
-            products. Contact our experts today and receive a free consultation with the best
-            packaging recommendations.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 mt-6 bg-white text-[#C9A227] px-7 py-3.5 rounded-xl font-semibold hover:scale-105 transition"
-          >
-            <ExternalLink size={17} />
-            Get Free Quote
-          </Link>
-        </div>
+      
       </div>
 
       {/* Zoom Modal */}

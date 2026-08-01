@@ -68,10 +68,10 @@ export default function TrustedBrands() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
             <h3 className="text-3xl font-bold text-[#1E293B]">
-              <CountUp end={150} suffix="+" />
+              <CountUp end={1000} suffix="+" />
             </h3>
             <p className="mt-2 text-sm text-[#64748B]">
-              Packaging Projects
+              Packaging Boxes
             </p>
           </div>
 

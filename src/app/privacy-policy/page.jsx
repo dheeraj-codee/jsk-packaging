@@ -271,42 +271,64 @@ export default function PrivacyPolicyPage() {
                 please reach out to us through any of the channels below.
               </p>
 
-              <div className="mt-8 grid sm:grid-cols-3 gap-4">
-                <a
-                  href="mailto:jskpackaging22@gmail.com"
-                  className="flex items-start gap-3 rounded-xl bg-white/5 border border-white/10 p-4 hover:bg-white/10 transition"
-                >
-                  <Mail className="text-[#E9CE7A] shrink-0" size={20} />
-                  <div>
-                    <p className="text-xs text-white/50">Email</p>
-                    <p className="text-sm font-medium break-all">
-                      jskpackaging22@gmail.com
-                    </p>
-                  </div>
-                </a>
+             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+  {/* Email */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col items-center text-sm text-center hover:border-[#E9CE7A]/40 transition-all duration-300">
+    <Mail className="w-8 h-8 text-[#E9CE7A] mb-4" />
 
-                <a
-                  href="tel:+919314235578"
-                  className="flex items-start gap-3 rounded-xl bg-white/5 border border-white/10 p-4 hover:bg-white/10 transition"
-                >
-                  <Phone className="text-[#E9CE7A] shrink-0" size={20} />
-                  <div>
-                    <p className="text-xs text-white/50">Phone</p>
-                    <p className="text-sm font-medium">+91 93142 35578</p>
-                  </div>
-                </a>
 
-                <div className="flex items-start gap-3 rounded-xl bg-white/5 border border-white/10 p-4">
-                  <MapPin className="text-[#E9CE7A] shrink-0" size={20} />
-                  <div>
-                    <p className="text-xs text-white/50">Address</p>
-                    <p className="text-sm font-medium leading-relaxed">
-                      D-25, Sudarshanpura Industrial Area, 22 Godam, Jaipur,
-                      Rajasthan
-                    </p>
-                  </div>
-                </div>
-              </div>
+    <a
+      href="mailto:info@jskpackaging.in"
+      className=" text-gray-300 hover:text-[#E9CE7A] transition break-all"
+    >
+      info@jskpackaging.in
+    </a>
+
+    <a
+      href="mailto:jskpackaging22@gmail.com"
+      className=" text-gray-300 hover:text-[#E9CE7A] transition break-all mt-2"
+    >
+      jskpackaging22@gmail.com
+    </a>
+  </div>
+
+  {/* Phone */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col items-center  text-sm text-center hover:border-[#E9CE7A]/40 transition-all duration-300">
+    <Phone className="w-8 h-8 text-[#E9CE7A] mb-4" />
+
+
+    <a
+      href="tel:+919314235578"
+      className="text-gray-300 hover:text-[#E9CE7A] transition"
+    >
+      +91 93142 35578
+    </a>
+
+    <a
+      href="tel:+919828411787"
+      className="text-gray-300 hover:text-[#E9CE7A] transition mt-2"
+    >
+      +91 98284 11787
+    </a>
+  </div>
+
+  {/* Address */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col items-center text-center text-sm hover:border-[#E9CE7A]/40 transition-all duration-300">
+    <MapPin className="w-8 h-8 text-[#E9CE7A] mb-4" />
+
+
+    <a
+      href="https://maps.google.com/?q=D-25,+Sudarshanpura+Industrial+Area,+22+Godam,+Jaipur,+Rajasthan"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-300 hover:text-[#E9CE7A] transition leading-7"
+    >
+      D-25, Sudarshanpura Industrial Area,<br />
+      22 Godam, Jaipur,<br />
+      Rajasthan
+    </a>
+  </div>
+</div>
             </div>
 
           </div>

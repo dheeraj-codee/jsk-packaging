@@ -122,15 +122,15 @@ export default function Navbar() {
 
           {/* E-Catalogue Button */}
 
-          <div className="hidden lg:block">
-            <a
-              href="/catalogue/JSK-Catalogue.pdf"
-              download
-              className="bg-[#C9A227] text-white px-5 py-2.5 rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl"
-            >
-              E-Catalogue
-            </a>
-          </div>
+       <div className="hidden lg:block">
+  <a
+  href="/catalog/JSK-Packaging-E-Catalog.pdf"
+  download="JSK-Packaging-E-Catalog.pdf"
+  className="bg-[#C9A227] text-white px-5 py-2.5 rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl"
+>
+  E-Catalogue
+</a>
+</div>
 
           {/* Mobile Toggle */}
 

@@ -6,8 +6,7 @@ import Link from "next/link";
 
 export default function ProductsHero() {
   return (
-    <section className="relative overflow-hidden bg-[#F8F7F3] pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-28">
-
+<section className="relative overflow-hidden bg-[#F8F7F3] pt-28 sm:pt-30 md:pt-32 lg:pt-30 pb-12 sm:pb-14 md:pb-16 lg:pb-16">
       {/* Background Glow */}
       <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-[#C9A227]/10 blur-3xl" />
       <div className="absolute -bottom-40 -right-40 h-[450px] w-[450px] rounded-full bg-[#1E293B]/5 blur-3xl" />
@@ -51,28 +50,7 @@ export default function ProductsHero() {
             crafted with precision, innovation and unmatched quality.
           </motion.p>
 
-          {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4"
-          >
-            <Link
-              href="/contact"
-              className="inline-flex w-auto justify-center items-center gap-2 rounded-full bg-[#C9A227] px-7 py-3.5 md:px-8 md:py-4 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#B8921F]"
-            >
-              Get Custom Quote
-              <ArrowRight size={18} />
-            </Link>
-
-            <Link
-              href="/portfolio"
-              className="inline-flex w-auto justify-center items-center rounded-full border-2 border-[#1E293B] px-7 py-3.5 md:px-8 md:py-4 font-semibold text-[#1E293B] transition-all duration-300 hover:bg-[#1E293B] hover:text-white"
-            >
-              View Portfolio
-            </Link>
-          </motion.div>
+         
 
           {/* Stats */}
           <div className="mt-10 md:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">

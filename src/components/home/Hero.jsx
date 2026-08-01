@@ -87,7 +87,7 @@ export default function Hero() {
             <div className="bg-white rounded-3xl p-6 shadow-xl border border-[#E5E7EB]">
               <div className="relative w-full h-[500px] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/ppk.jpg"
+                  src="/images/hero.png"
                   alt="Premium Packaging Boxes"
                   fill
                   priority

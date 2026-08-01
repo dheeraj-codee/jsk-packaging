@@ -8,9 +8,9 @@ export const products = [
     description:
       "High-quality rigid boxes that offer premium protection and elegant presentation for your valuable products.",
     gallery: [
-      "/images/rigid/1.png",
-      "/images/rigid/2.png",
       "/images/rigid/3.png",
+      "/images/rigid/2.png",
+      "/images/rigid/1.png",
       "/images/rigid/4.png",
     ],
     specs: [
