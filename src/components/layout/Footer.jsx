@@ -43,7 +43,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+  href="https://www.instagram.com/jsk.packaging/"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C9A227] transition-all duration-300"
               >
                 <FaInstagram size={16} />

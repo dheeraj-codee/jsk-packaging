@@ -124,7 +124,7 @@ export default function Navbar() {
 
        <div className="hidden lg:block">
   <a
-  href="/catalog/JSK-Packaging-E-Catalog.pdf"
+  href="/images/catalog/JSK-Packaging-E-Catalog.pdf"
   download="JSK-Packaging-E-Catalog.pdf"
   className="bg-[#C9A227] text-white px-5 py-2.5 rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl"
 >
@@ -257,7 +257,7 @@ export default function Navbar() {
         {/* Download button pinned to bottom */}
         <div className="p-4 border-t border-[#E5E7EB] shrink-0">
           <a
-            href="/catalogue/JSK-Catalogue.pdf"
+  href="/images/catalog/JSK-Packaging-E-Catalog.pdf"
             download
             className="flex items-center justify-center gap-2 w-full bg-[#C9A227] text-white py-2.5 rounded-lg text-center font-medium hover:bg-[#b8911f] transition"
           >
