@@ -8,17 +8,6 @@ const nextConfig = {
     // Cache optimized images for 30 days.
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
-
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.jskpackaging.in" }],
-        destination: "https://jskpackaging.in/:path*",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
