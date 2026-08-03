@@ -24,9 +24,9 @@ export const metadata = {
   title: "Terms & Conditions | JSK Packaging",
   description:
     "Read the Terms & Conditions governing the use of the JSK Packaging website and our packaging products and services.",
-  alternates: {
-    canonical: "https://www.jskpackaging.in/terms-and-conditions",
-  },
+ alternates: {
+  canonical: "https://jskpackaging.in/terms-and-conditions",
+},
 };
 
 const LAST_UPDATED = "July 2026";

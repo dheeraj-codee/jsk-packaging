@@ -20,9 +20,9 @@ export const metadata = {
   title: "Privacy Policy | JSK Packaging",
   description:
     "Learn how JSK Packaging collects, uses, stores and protects the personal information you share with us through our website and services.",
-  alternates: {
-    canonical: "https://www.jskpackaging.in/privacy-policy",
-  },
+ alternates: {
+  canonical: "https://jskpackaging.in/privacy-policy",
+},
 };
 
 const LAST_UPDATED = "July 2026";
