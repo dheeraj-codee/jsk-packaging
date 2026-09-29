@@ -51,7 +51,7 @@ export default function AboutHero() {
                 <span className="text-sm text-[#64748B]">Boxes Supplied</span>
               </div>
               <div className="flex items-center gap-2 rounded-xl bg-white border border-[#E5E7EB] px-5 py-3 shadow-sm">
-                <span className="text-xl font-bold text-[#C9A227]">50+</span>
+                <span className="text-xl font-bold text-[#C9A227]">200+</span>
                 <span className="text-sm text-[#64748B]">Happy Customers</span>
               </div>
             </div>

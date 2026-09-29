@@ -59,7 +59,7 @@ export default function CTASection() {
 
             <div>
               <h3 className="text-4xl font-bold text-[#C9A227]">
-                50+
+                200+
               </h3>
               <p className="text-gray-300 mt-2">
                 Happy Clients

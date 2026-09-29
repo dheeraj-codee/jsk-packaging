@@ -77,7 +77,7 @@ export default function TrustedBrands() {
 
           <div className="bg-[#F8F7F3] rounded-3xl p-8 text-center">
             <h3 className="text-3xl font-bold text-[#1E293B]">
-              <CountUp end={50} suffix="+" />
+              <CountUp end={200} suffix="+" />
             </h3>
             <p className="mt-2 text-sm text-[#64748B]">
               Happy Clients

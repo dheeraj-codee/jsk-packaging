@@ -19,7 +19,7 @@ export default function CompanyStory() {
   const stats = [
     { value: "2021", label: "Year Founded" },
     { value: "1000+", label: "Boxes Supplied" },
-    { value: "50+", label: "Happy Customers" },
+    { value: "200+", label: "Happy Customers" },
   ];
 
   const timeline = [
