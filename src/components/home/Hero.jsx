@@ -55,7 +55,7 @@ export default function Hero() {
             <div className="grid grid-cols-3 gap-6 mt-12 w-full text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start">
                 <h3 className="text-3xl font-bold text-[#1E293B]">
-                  150+
+                  500+
                 </h3>
                 <p className="text-sm text-[#64748B]">
                   Projects Delivered
@@ -64,7 +64,7 @@ export default function Hero() {
 
               <div className="flex flex-col items-center lg:items-start">
                 <h3 className="text-3xl font-bold text-[#1E293B]">
-                  50+
+                  200+
                 </h3>
                 <p className="text-sm text-[#64748B]">
                   Happy Clients
